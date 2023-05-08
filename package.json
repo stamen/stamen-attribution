@@ -5,6 +5,7 @@
   "source": "src/index.js",
   "main": "dist/main.js",
   "module": "dist/module.js",
+  "browser": "dist/main.js",
   "scripts": {
     "watch": "parcel watch && nodemon --watch assets --watch src --ext svg --exec 'node scripts/make-string-svg.js'",
     "build": "node scripts/make-string-svg.js && parcel build",
