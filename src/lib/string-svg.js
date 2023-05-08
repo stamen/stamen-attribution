@@ -1,3 +1,4 @@
+
 const stamenSvg = `<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -28,7 +29,6 @@ const stamenSvg = `<?xml version="1.0" encoding="utf-8"?>
 	c-0.6,0.6-0.9,1.4-1.1,2.4h6.9c-0.1-1.1-0.4-1.9-1.1-2.4s-1.4-0.8-2.4-0.8C74.2,8.8,73.5,9.1,72.9,9.7z" fill='white'/>
 <path d="M97.1,6.8c1,0.8,1.5,2.2,1.5,4.1v10.3h-4.1v-9.3c0-0.8-0.1-1.4-0.3-1.8c-0.4-0.8-1.1-1.2-2.2-1.2c-1.3,0-2.3,0.6-2.8,1.7
 	C89,11.2,88.8,12,88.8,13v8.2h-4V6h3.9v2.2c0.5-0.8,1-1.3,1.4-1.7C91,5.9,92,5.6,93.3,5.6C94.8,5.6,96.1,6,97.1,6.8z" fill='white'/>
-</svg>
-`;
+</svg>`
 
 export { stamenSvg };

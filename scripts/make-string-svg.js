@@ -1,11 +1,11 @@
-import fs from 'fs';
+const fs = require('fs');
 
 const svgPath = 'assets/stamen-logo.svg';
 
 const svgString = fs.readFileSync(svgPath, 'utf8');
 
 const jsFile = `
-const stamenSvg = ${svgString}
+const stamenSvg = \`${svgString}\`
 
 export { stamenSvg };
 `;

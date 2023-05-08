@@ -6,7 +6,7 @@
   "main": "dist/main.js",
   "module": "dist/module.js",
   "scripts": {
-    "watch": "nodemon --watch assets --ext svg --exec 'scripts/make-string-svg.js && parcel watch'",
+    "watch": "nodemon --watch assets --ext svg --exec 'node scripts/make-string-svg.js' && parcel watch",
     "build": "node scripts/make-string-svg.js && parcel build",
     "test": "jest --watchAll",
     "jest-watch": "jest --watch"

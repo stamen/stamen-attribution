@@ -1,16 +1,18 @@
 import { stamenSvg } from './lib/string-svg';
 
+const setStyle = (el, styleObj) => {
+  Object.entries(styleObj).forEach(([k, v]) => {
+    el.style[k] = v;
+  });
+};
+
 const stamenLogo = document.createElement('img');
 stamenLogo.src = `data:image/svg+xml;charset=utf-8,${stamenSvg}`;
 
 const siteLink = document.createElement('a');
 siteLink.href = 'https://stamen.com';
-siteLink.appendChild(stamenLogo);
 
 const attribution = document.createElement('div');
-attribution.appendChild(siteLink);
-
-document.body.appendChild(attribution);
 
 const stamenLogoStyle = {
   height: '24px',
@@ -18,14 +20,14 @@ const stamenLogoStyle = {
   bottom: '-1px'
 };
 
-stamenLogo.style = { ...stamenLogo.style, ...stamenLogoStyle };
+setStyle(stamenLogo, stamenLogoStyle);
 
 const siteLinkStyle = {
   width: '110px',
   position: 'relative'
 };
 
-siteLink.style = { ...siteLink.style, ...siteLinkStyle };
+setStyle(siteLink, siteLinkStyle);
 
 const attributionStyle = {
   position: 'fixed',
@@ -36,7 +38,11 @@ const attributionStyle = {
   flexDirection: 'row-reverse'
 };
 
-attribution.style = { ...attribution.style, ...attributionStyle };
+setStyle(attribution, attributionStyle);
+
+siteLink.appendChild(stamenLogo);
+attribution.appendChild(siteLink);
+document.body.appendChild(attribution);
 
 const updateStyle = styleObj => {
   for (const [k, v] of Object.entries(styleObj)) {
@@ -65,8 +71,8 @@ const addLink = (url, text) => {
     marginBottom: '6px',
     fontSize: '14px'
   };
-  addedLink.style = { ...addedLink.style, ...addedLinkStyle };
-  spacer.style = { ...spacer.style, ...addedLinkStyle };
+  setStyle(addedLink, addedLinkStyle);
+  setStyle(spacer, addedLinkStyle);
 
   marker = true;
 };
