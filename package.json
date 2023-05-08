@@ -1,0 +1,33 @@
+{
+  "name": "carto-tools-module-template",
+  "version": "0.2.0",
+  "description": "A template to build modules",
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "test": "jest --watchAll",
+    "jest-watch": "jest --watch"
+  },
+  "author": "Stamen Design",
+  "license": "MIT",
+  "jest": {
+    "clearMocks": true,
+    "testEnvironment": "node",
+    "collectCoverage": false
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@parcel/babel-preset-env": "^2.0.1",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.3.1",
+    "parcel": "2.6.0"
+  },
+  "bin": {
+    "your-script": "bin/your-script"
+  }
+}

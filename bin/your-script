@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+const { doThing } = require('../dist/main');
+
+console.log(doThing());
