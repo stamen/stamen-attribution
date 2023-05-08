@@ -1,13 +1,13 @@
 {
-  "name": "carto-tools-module-template",
-  "version": "0.2.0",
-  "description": "A template to build modules",
+  "name": "stamen-attribution",
+  "version": "0.1.0",
+  "description": "Attribution for Stamen tools",
   "source": "src/index.js",
   "main": "dist/main.js",
   "module": "dist/module.js",
   "scripts": {
-    "watch": "parcel watch",
-    "build": "parcel build",
+    "watch": "nodemon --watch assets --ext svg --exec 'scripts/make-string-svg.js && parcel watch'",
+    "build": "node scripts/make-string-svg.js && parcel build",
     "test": "jest --watchAll",
     "jest-watch": "jest --watch"
   },
@@ -18,7 +18,9 @@
     "testEnvironment": "node",
     "collectCoverage": false
   },
-  "dependencies": {},
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
