@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Attribution for Stamen tools",
   "source": "src/index.js",
-  "main": "dist/main.js",
   "module": "dist/module.js",
   "browser": "dist/main.js",
   "scripts": {
