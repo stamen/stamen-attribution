@@ -1,6 +1,6 @@
 {
   "name": "stamen-attribution",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Attribution for Stamen tools",
   "source": "src/index.js",
   "main": "dist/main.js",
